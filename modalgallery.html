@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--Modal Gallery -->
+<!--Created by Deon van Zyl-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Modal Gallery Test Page</title>
+    <!--Font Awesome for back forward arrow-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modalgallery.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/modalgallery.js"></script>
+</head>
+<body>
+    <!-- Start Gallery Modal Code-->
+    <a href="#openModal">Open Gallery Modal</a>
+
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="modalclose">X</a>
+
+            <!--Start Gallery HTML Code-->
+            <div class="masterBox">
+
+                <div class="containerBox">
+
+                    <div id="slide" class="row">
+
+                        <ul class="infoBox">
+                            <!-- Some diffrent examples of what can be displayed-->
+                            <li class="hidden">
+                                <div class="columnleft" style="background-color:#aaa;">
+                                    <img src="https://preview.ibb.co/b43uR8/img01.jpg" class="activeslideimg">
+                                </div><div class="columnright">
+                                    <h2>Information</h2>
+                                    <p>
+                                        <b>Cathkin Community Centre.</b><br />
+                                        <b>Community Centre</b><br />
+                                        <b>Checklist date:</b>23/01/2018 <br />
+                                        <b>Section:</b>Kitchen <br />
+                                        <b>Question:</b>All appliances are working and clean
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="hidden"><img src="https://preview.ibb.co/ioNAzT/img02.jpg">Info 2</li>
+                            <li class="hidden"><img src="https://preview.ibb.co/c9xtKT/img03.jpg">Info 3</li>
+                            <li class="hidden"><img src="https://preview.ibb.co/bsYYKT/img04.jpg">Info 4</li>
+                            <li class="hidden"><img src="https://preview.ibb.co/bGUjR8/img05.jpg">Info 5</li>
+                            <li class="hidden"><img src="https://preview.ibb.co/dxYYKT/img06.jpg"></li>
+                            <li class="hidden"><img src="https://preview.ibb.co/ffBym8/img07.jpg"></li>
+                            <li class="hidden"><img src="https://preview.ibb.co/dXHtKT/img08.jpg"></li>
+                            <li class="hidden"><img src="https://preview.ibb.co/hBiNDo/img09.jpg"></li>
+                            <li class="hidden"><img src="https://preview.ibb.co/gHUvYo/img10.jpg"></li>
+                            <li class="hidden"><img src="https://preview.ibb.co/moKvYo/img11.jpg"></li>
+                            <li class="hidden"><img src="https://preview.ibb.co/diyYKT/img12.jpg"></li>
+
+                        </ul>
+                    </div>
+
+                    <div id="thumbnails">
+                        <i class="fas fa-angle-right arrow forward"></i>
+
+                        <ul class="listBox">
+
+                            <li><div class="content"><img src="https://preview.ibb.co/b43uR8/img01.jpg"><p>IMG 1</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/ioNAzT/img02.jpg"><p>IMG 2</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/c9xtKT/img03.jpg"><p>IMG 3</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/bsYYKT/img04.jpg"><p>IMG 4</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/bGUjR8/img05.jpg"><p>IMG 5</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/dxYYKT/img06.jpg"><p>IMG 6</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/ffBym8/img07.jpg"><p>IMG 7</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/dXHtKT/img08.jpg"><p>IMG 8</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/hBiNDo/img09.jpg"><p>IMG 9</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/gHUvYo/img10.jpg"><p>IMG 10</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/moKvYo/img11.jpg"><p>IMG 11</p></div></li>
+                            <li><div class="content"><img src="https://preview.ibb.co/diyYKT/img12.jpg"><p>IMG 12</p></div></li>
+
+                        </ul>
+                        <i class="fas fa-angle-left arrow back"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- End Gallery HTML code -->
+
+        </div>
+    </div>
+    <!-- End Gallery Modal Code-->
+    <p>
+        <div>
+            <label for="fileUpload">
+                Select File to Upload: <input id="fileUpload" type="file" multiple />
+            </label>
+            <div id="preview"></div><br />
+            <input id="btnUploadFile" type="button" value="Upload File" />
+            <div id="disp">
+            </div>
+
+
+        </div>
+    </p>
+    <p>
+        <input id="btn" type="button" value="Get All photo metadata" />
+        <input id="btnClear" type="button" value="Clear" /><br />
+        <div id="ulmysiteImages"></div>
+    </p>
+
+
+</body>
+</html>
